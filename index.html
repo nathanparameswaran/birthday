@@ -1,1 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <audio id="birthdayMusic" loop>
+        <source src="music/song.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="hearts"></div>
+
+    <!-- SCREEN 1 -->
+    <section id="screen1" class="screen active">
+
+        <h1>❤️ Birthday Surprise ❤️</h1>
+
+        <h2>Where was our first date?</h2>
+
+        <input
+            type="text"
+            id="answer1"
+            placeholder="Enter your answer"
+        >
+
+        <button onclick="checkAnswer1()">
+            Submit
+        </button>
+
+        <p id="error1" class="error"></p>
+
+    </section>
+
+    <!-- SCREEN 2 -->
+    <section id="screen2" class="screen">
+
+        <h1>Happy Birthday Elsa ❤️</h1>
+
+        <h2>
+            Have the best day ever.
+        </h2>
+
+        <button
+            class="next-btn"
+            onclick="showScreen(3)"
+        >
+            Click For More Surprises 🎁
+        </button>
+
+    </section>
+
+    <!-- SCREEN 3 -->
+    <section id="screen3" class="screen">
+
+        <h2>
+            What did we sleep in on our first night away together?
+        </h2>
+
+        <input
+            type="text"
+            id="answer2"
+            placeholder="Enter your answer"
+        >
+
+        <button onclick="checkAnswer2()">
+            Submit
+        </button>
+
+        <p id="error2" class="error"></p>
+
+    </section>
+
+    <!-- SCREEN 4 -->
+    <section id="screen4" class="screen">
+
+        <h1>Our First Trip Together ❤️</h1>
+
+        <div class="gallery">
+
+            <img src="images/trip1-1.jpg" alt="">
+            <img src="images/trip1-2.jpg" alt="">
+            <img src="images/trip1-3.jpg" alt="">
+
+        </div>
+
+        <button
+            class="next-btn"
+            onclick="showScreen(5)"
+        >
+            Next Surprise ➜
+        </button>
+
+    </section>
+
+    <!-- SCREEN 5 -->
+    <section id="screen5" class="screen">
+
+        <h2>
+            Where did we go on holiday first after the Netherlands?
+        </h2>
+
+        <input
+            type="text"
+            id="answer3"
+            placeholder="Enter your answer"
+        >
+
+        <button onclick="checkAnswer3()">
+            Submit
+        </button>
+
+        <p id="error3" class="error"></p>
+
+    </section>
+
+    <!-- SCREEN 6 -->
+    <section id="screen6" class="screen">
+
+        <h1>One Of My Favourite Adventures ❤️</h1>
+
+        <div class="gallery">
+
+            <img src="images/holiday1.jpg" alt="">
+            <img src="images/holiday2.jpg" alt="">
+            <img src="images/holiday3.jpg" alt="">
+
+        </div>
+
+        <button
+            class="next-btn"
+            onclick="showScreen(7)"
+        >
+            Final Surprise 🎉
+        </button>
+
+    </section>
+
+    <!-- SCREEN 7 -->
+    <section id="screen7" class="screen">
+
+        <h1>Happy Birthday Elsa ❤️</h1>
+
+        <h2>
+            Thank you for all the memories.
+            I can't wait to make many more with you.
+        </h2>
+
+        <div class="gallery">
+
+            <img src="images/birthday1.jpg" alt="">
+            <img src="images/birthday2.jpg" alt="">
+            <img src="images/birthday3.jpg" alt="">
+
+        </div>
+
+        <img
+            src="gifs/birthday.gif"
+            alt="Birthday Gif"
+            class="gif"
+        >
+
+        <h2>
+            🎂 Happy Birthday 🎂
+        </h2>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
